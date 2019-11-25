@@ -2,8 +2,8 @@
 #include"stackheader.h"
 #include<stdlib.h>
 
-int MAX = 10;
-int arr[10];
+int MAX = 8;
+int arr[8];
 int top=-1;
 
 int main(){
@@ -29,5 +29,5 @@ int main(){
   }
 
   priority_task = peek();
-  printf("The task to be scheduled is %d\n", priority_task);
+  printf("The task to be scheduled is %d\n", priority_task + 1);
 }

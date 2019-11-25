@@ -1,6 +1,6 @@
 #include<stdio.h>
- extern int MAX;
-extern int arr[10];
+extern int MAX;
+extern int arr[8];
 extern int top;
 void push(int ele)
 {

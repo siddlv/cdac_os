@@ -24,6 +24,6 @@ int main(int argc, char const *argv[])
 		}
 	}
 
-	printf("The task to be scheduled is %d\n", priority_task);
+	printf("The task to be scheduled is %d\n", priority_task + 1);
 	return 0;
 }
