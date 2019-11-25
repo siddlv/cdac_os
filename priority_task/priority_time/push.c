@@ -4,12 +4,12 @@ extern int arr[8];
 extern int top;
 void push(int ele)
 {
-	if(top==MAX-1)
+	if (top == MAX - 1)
 	{
 		printf("stack overflow\n");
 		return;
 	}
 
-		top=top+1;
-		arr[top]=ele;
+	top = top + 1;
+	arr[top] = ele;
 }

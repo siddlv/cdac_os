@@ -4,7 +4,7 @@ extern int arr[8];
 extern int top;
 int peek()
 {
-	if(top==-1)
+	if (top == -1)
 	{
 		printf("stack underflow\n");
 	}

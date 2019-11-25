@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[])
-{	
+{
 	int tasks;
 	int tasks_arr[8];
 	int priority_task = 0;
