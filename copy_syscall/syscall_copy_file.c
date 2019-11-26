@@ -8,7 +8,7 @@
 int main(int argc, char const *argv[])
 {
 	int fd1, fd2, w_return, r_return, c_return1, c_return2;
-	const int size = 100;
+	const int size = 2000 * 1024;
 	char buf[size];
 
 	//opening the file1 to be copied
