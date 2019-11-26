@@ -1,4 +1,4 @@
-CC = gcc
+CC = gcc -O3
 
 main: main.o add.o sub.o mul.o div.o
 	$(CC) -o main main.o add.o sub.o mul.o div.o
