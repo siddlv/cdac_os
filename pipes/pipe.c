@@ -58,7 +58,7 @@ int main()
 		read(fd2[0], parent_buff, BUFFER_SIZE); 
 		printf("%d + %d = %d\n", input[0], input[1], parent_buff[0]); 
 		printf("Parent read from pipe | Parent PID: %d\n", getpid());
-		close(fd2[0]); 
+		close(fd2[0]);
 	} 
 
 	else
