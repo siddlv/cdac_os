@@ -33,3 +33,15 @@ CDAC Operating System Module Assignments
 
 11. thread
 		Program to use threads
+
+12. thread_add
+		Program to send two integers to a thread for addition and printing the sum of the two.
+
+13. zombie
+		Program to observe zombie process in Linux
+
+14. race_condition
+		Program to observe race condition of two processes
+
+15, mutex
+		Program to solve race condition of two processes with mutex
