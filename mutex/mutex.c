@@ -15,6 +15,7 @@ void* incThread(void* data)
 		pthread_mutex_unlock (&count_mutex);
 	}
 }
+
 void* decThread(void* data)
 {
 	while (1)
@@ -25,6 +26,7 @@ void* decThread(void* data)
 		pthread_mutex_unlock (&count_mutex);
 	}
 }
+
 int main()
 {
 	pthread_t id1;
