@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 	int fd, w_return_size, return_close;
 	const void *buf = "hello\n";
 
-	//opening the file, if it doesnt exists then creating it and givinf approriate permissions
+	//opening the file, if it doesnt exists then creating it and giving approriate permissions
 	fd = open("syscall.txt", O_CREAT | O_WRONLY, 
 		S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 

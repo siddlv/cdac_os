@@ -39,7 +39,6 @@ void* sensor(void* data){
 int main(int argc, char const *argv[])
 {
 	pthread_t lcd_t, serial_t, network_t, sensor_t;
-	
 
 	pthread_barrier_init(&barr_t, NULL, 4);
 
