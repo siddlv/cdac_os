@@ -4,12 +4,12 @@
 #include<semaphore.h>
 #include<unistd.h>
 
-int* get_block(pthread_t );
+int* get_block(pthread_t);
 void free_block(pthread_t id);
 int* create_block(int );
 void destroy(int *);
-void* thrd1_add(void *data)
-{
+
+void* thrd1_add(void *data){
 	pthread_t t1_id;
 	t1_id = pthread_self();
 	int *arr1 = get_block(t1_id);
@@ -22,8 +22,7 @@ void* thrd1_add(void *data)
 	free_block(t1_id);
 }
 
-void* thrd2_sub(void *data)
-{
+void* thrd2_sub(void *data){
 	pthread_t t2_id = pthread_self();
 	int *arr2 = get_block(t2_id);
 	printf("in t2.sub:\n");
@@ -34,8 +33,8 @@ void* thrd2_sub(void *data)
 	sleep(10);
 	free_block(t2_id);
 }
-void* thrd3_mul(void *data)
-{
+
+void* thrd3_mul(void *data){
 	pthread_t t3_id = pthread_self();
 	int *arr3 = get_block(t3_id);
 	//use
@@ -47,8 +46,8 @@ void* thrd3_mul(void *data)
 	sleep(15);
 	free_block(t3_id);
 }
-void* thrd4_div(void *data)
-{
+
+void* thrd4_div(void *data){
 	int *arr4;
 	pthread_t t4_id = pthread_self();
 	arr4 = get_block(t4_id);
@@ -70,8 +69,7 @@ pthread_t use_id1, use_id2, use_id3;
 sem_t sem_rsource;
 
 //main functionality
-int main()
-{
+int main(){
 	pthread_t thrd1_id, thrd2_id, thrd3_id, thrd4_id;
 
 //create semaphore

@@ -1,5 +1,6 @@
 #include<semaphore.h>
 #include<pthread.h>
+
 extern int count1;
 extern int count2;
 extern int count3;
